@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Radica Software Internship</title>
+    
+</head>
+<body>
+
+    <form>
+        <div class="child">
+            <label for="userID">User ID: </label>
+            <input type="text" id="userID" placeholder="User ID" disabled>
+
+            <label for="userName">Username: </label>
+            <input type="text" id="userName" placeholder="Username">
+
+            <label for="occupation">Occupation: </label>
+            <input type="text" id="occupation" placeholder="Occupation">
+
+            <button type="button" id="btn" >Add</button>
+        </div>
+    </form> 
+    <div>
+        <div class="child">
+            <label for="sorting">Sort By: </label>
+            <select name="data" id="data" onchange="sortColumn()">
+                <option value="id">User ID</option>
+                <option value="userName">UserName</option>
+                <option value="occupation">UserOccupation</option>
+            </select>
+        </div>
+    </div>
+    <div >
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableData"></tbody>
+
+        </table>
+    </div>
+    
+    
+</body>
+</html>
+
